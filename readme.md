@@ -11,6 +11,41 @@
 
 ## Stats
 ### Letters
+
+#### Position Frequency
+
+This is the frequency of each letter in each position. For example the first (0th) letter is `s` in 15.8% of word bank words.
+
+|    | 0   | freq | 1   | freq | 2 | freq | 3 | freq | 4 | freq |
+|---:|:--------|-------------:|:--------|------------:|:--------|------------:|:--------|--------------:|:--------|--------------:|
+|  0 | s       |   0.158099   | a       | 0.131317    | a       | 0.132613    | e       |   0.137365    | e       |   0.183153    |
+|  1 | c       |   0.0855292  | o       | 0.120518    | i       | 0.114903    | n       |   0.0786177   | y       |   0.157235    |
+|  2 | b       |   0.07473    | r       | 0.115335    | o       | 0.1054      | s       |   0.0738661   | t       |   0.109287    |
+|  3 | t       |   0.0643629  | e       | 0.104536    | e       | 0.0764579   | a       |   0.0704104   | r       |   0.0915767   |
+|  4 | p       |   0.0613391  | i       | 0.087257    | u       | 0.0712743   | l       |   0.0699784   | l       |   0.0673866   |
+|  5 | a       |   0.0609071  | l       | 0.0868251   | r       | 0.0704104   | i       |   0.0682505   | h       |   0.0600432   |
+|  6 | f       |   0.0587473  | u       | 0.0803456   | n       | 0.0600432   | c       |   0.0656587   | n       |   0.0561555   |
+|  7 | g       |   0.049676   | h       | 0.062203    | l       | 0.0483801   | r       |   0.0656587   | d       |   0.0509719   |
+|  8 | d       |   0.0479482  | n       | 0.037581    | t       | 0.0479482   | t       |   0.0600432   | k       |   0.0488121   |
+|  9 | m       |   0.0462203  | t       | 0.0332613   | s       | 0.0345572   | o       |   0.0570194   | a       |   0.0276458   |
+| 10 | r       |   0.0453564  | p       | 0.0263499   | d       | 0.0323974   | u       |   0.0354212   | o       |   0.025054    |
+| 11 | l       |   0.038013   | w       | 0.0190065   | g       | 0.0289417   | g       |   0.0328294   | p       |   0.0241901   |
+| 12 | w       |   0.0358531  | c       | 0.0172786   | m       | 0.0263499   | d       |   0.0298056   | m       |   0.0181425   |
+| 13 | e       |   0.0311015  | m       | 0.0164147   | p       | 0.025054    | m       |   0.0293737   | g       |   0.0177106   |
+| 14 | h       |   0.0298056  | y       | 0.00993521  | b       | 0.024622    | k       |   0.0237581   | s       |   0.0155508   |
+| 15 | v       |   0.0185745  | d       | 0.00863931  | c       | 0.0241901   | p       |   0.0215983   | c       |   0.0133909   |
+| 16 | o       |   0.0177106  | b       | 0.00691145  | v       | 0.0211663   | v       |   0.0198704   | f       |   0.0112311   |
+| 17 | n       |   0.0159827  | s       | 0.00691145  | y       | 0.012527    | f       |   0.0151188   | w       |   0.00734341  |
+| 18 | i       |   0.0146868  | v       | 0.00647948  | w       | 0.0112311   | h       |   0.012095    | i       |   0.00475162  |
+| 19 | u       |   0.0142549  | x       | 0.00604752  | f       | 0.0107991   | w       |   0.0107991   | b       |   0.00475162  |
+| 20 | q       |   0.00993521 | g       | 0.00518359  | k       | 0.00518359  | b       |   0.0103672   | x       |   0.00345572  |
+| 21 | k       |   0.00863931 | k       | 0.00431965  | x       | 0.00518359  | z       |   0.00863931  | z       |   0.00172786  |
+| 22 | j       |   0.00863931 | f       | 0.00345572  | z       | 0.00475162  | x       |   0.0012959   | u       |   0.000431965 |
+| 23 | y       |   0.00259179 | q       | 0.00215983  | h       | 0.00388769  | y       |   0.0012959   | nan     | nan           |
+| 24 | z       |   0.0012959  | z       | 0.000863931 | j       | 0.0012959   | j       |   0.000863931 | nan     | nan           |
+| 25 | nan     | nan          | j       | 0.000863931 | q       | 0.000431965 | nan     | nan           | nan     | nan           |
+
+#### Overall Frequency
 The following summary stats are for letters in word bank words.
 
 Definitions:
@@ -50,6 +85,108 @@ Definitions:
 | z        |              35 |               0.0151188 | 0.0172786 |           1.14286 |          2 |
 
 ### Best First Pick
+
+#### Position Frequency
+The following are the highest likelihood of correct letters in the correct place for word bank words (avg_score is the average number of correct letters in the correct place):
+| word   |   avg_score | in_bank   |
+|:-------|------------:|:----------|
+| slate  |    0.620734 | True      |
+| sauce  |    0.609503 | True      |
+| slice  |    0.608639 | True      |
+| shale  |    0.606048 | True      |
+| saute  |    0.603888 | True      |
+| share  |    0.601728 | True      |
+| sooty  |    0.601296 | True      |
+| shine  |    0.596976 | True      |
+| suite  |    0.596544 | True      |
+| crane  |    0.595248 | True      |
+| saint  |    0.592225 | True      |
+| soapy  |    0.590065 | True      |
+| shone  |    0.587473 | True      |
+| shire  |    0.584017 | True      |
+| saucy  |    0.583585 | True      |
+| slave  |    0.580562 | True      |
+| sense  |    0.579698 | True      |
+| cease  |    0.579698 | True      |
+| saner  |    0.578402 | True      |
+| stale  |    0.577106 | True      |
+
+and for all valid words:
+
+| word   |   avg_score | in_bank   |
+|:-------|------------:|:----------|
+| saree  |    0.680346 | False     |
+| sooey  |    0.678618 | False     |
+| soree  |    0.669546 | False     |
+| saine  |    0.666091 | False     |
+| soare  |    0.660043 | False     |
+| saice  |    0.653132 | False     |
+| sease  |    0.652268 | False     |
+| seare  |    0.64406  | False     |
+| seine  |    0.639309 | False     |
+| slane  |    0.639309 | False     |
+| soole  |    0.637149 | False     |
+| siree  |    0.636285 | False     |
+| seise  |    0.634557 | False     |
+| cooee  |    0.631965 | False     |
+| soote  |    0.627214 | False     |
+| slate  |    0.620734 | True      |
+| soily  |    0.620734 | False     |
+| soave  |    0.614255 | False     |
+| samey  |    0.610367 | False     |
+| sauce  |    0.609503 | True      |
+
+This is the same as above but avg_score also includes 0.5 for correct letters in the incorrect place. This is for word bank words:
+
+| word   |   avg_score | in_bank   |
+|:-------|------------:|:----------|
+| stare  |     1.26026 | True      |
+| arose  |     1.2486  | True      |
+| slate  |     1.24536 | True      |
+| raise  |     1.23564 | True      |
+| arise  |     1.23542 | True      |
+| saner  |     1.22981 | True      |
+| snare  |     1.22916 | True      |
+| irate  |     1.22721 | True      |
+| stale  |     1.22354 | True      |
+| crate  |     1.22073 | True      |
+| trace  |     1.21296 | True      |
+| later  |     1.20778 | True      |
+| share  |     1.2013  | True      |
+| store  |     1.19806 | True      |
+| scare  |     1.19784 | True      |
+| alter  |     1.19698 | True      |
+| crane  |     1.19676 | True      |
+| alert  |     1.18423 | True      |
+| teary  |     1.18337 | True      |
+| saute  |     1.18251 | True      |
+
+and all valid words:
+
+| word   |   avg_score | in_bank   |
+|:-------|------------:|:----------|
+| soare  |     1.30929 | False     |
+| roate  |     1.26307 | False     |
+| stare  |     1.26026 | True      |
+| arose  |     1.2486  | True      |
+| orate  |     1.24665 | False     |
+| slate  |     1.24536 | True      |
+| raile  |     1.24449 | False     |
+| raise  |     1.23564 | True      |
+| arise  |     1.23542 | True      |
+| strae  |     1.23153 | False     |
+| saner  |     1.22981 | True      |
+| snare  |     1.22916 | True      |
+| salet  |     1.22721 | False     |
+| irate  |     1.22721 | True      |
+| saine  |     1.22441 | False     |
+| stale  |     1.22354 | True      |
+| slane  |     1.22138 | False     |
+| taler  |     1.22117 | False     |
+| crate  |     1.22073 | True      |
+| ariel  |     1.22009 | False     |
+#### Overall Frequency
+
 The following scores are the sum of unique letter `words_contain_freq` for word bank words:
 | word   |   score | in_bank   |
 |:-------|--------:|:----------|
@@ -99,7 +236,7 @@ and for valid words:
 | taser  | 1.76544 | False     |
 | strae  | 1.76544 | False     |
 
-### Best Second Pick
+#### Best Second Pick
 If you chose `alter` and have no qualms about guessing words that don't contain any known letters:
 | word   |   score | in_bank   |
 |:-------|--------:|:----------|
