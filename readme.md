@@ -3,10 +3,13 @@
 ## Files
 |file|desc|
 |--|--|
-|env.py |a reinforcement learning environment for playing wordle|
-|agent.ipynb|a notebook with a simple agent, snippet for training stable_baselines agent and some manual analysis|
+|envs.py | openai.gym reinforcement learning environments for playing wordle|
+|agent.ipynb|a notebook for playing around with envs and agents and some manual analysis|
 |valid-words.csv| words that wordle accepts|
 |word-bank.csv| possible correct wordle words|
+|ppo.zip| trained ppo agent on env2|
+|train.py| script for training stable_baselines agent|
+|play_wordle.py|script to play wordle on env2 in the terminal|
 
 
 ## Stats
