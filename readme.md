@@ -3,8 +3,9 @@
 ## Files
 |file|desc|
 |--|--|
-|envs.py | openai.gym reinforcement learning environments for playing wordle|
-|agent.ipynb|a notebook for playing around with envs and agents and some manual analysis|
+|envs.py | openai.gym reinforcement learning environment(s) for playing wordle|
+|playground.ipynb|a notebook for playing around with envs and agents and some manual analysis|
+|agent.py| agents that work in the env(s) |
 |valid-words.csv| words that wordle accepts|
 |word-bank.csv| possible correct wordle words|
 |ppo.zip| trained ppo agent on env2|
