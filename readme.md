@@ -10,8 +10,25 @@
 |word-bank.csv| possible correct wordle words|
 |ppo.zip| trained ppo agent on env2|
 |train.py| script for training stable_baselines agent|
+|train_cont.py| script for continued training of existing agent|
 |play_wordle.py|script to play wordle on env2 in the terminal|
 
+
+## Run
+play wordle in terminal
+```bash
+python play_wordle.py
+```
+
+train agent
+```
+python train.py
+```
+
+tensorboard
+```
+tensorboard --logdir ./ppo_wordle_tensorboard/
+```
 
 ## Stats
 ### Letters
