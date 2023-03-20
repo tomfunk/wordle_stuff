@@ -32,6 +32,8 @@ class WordleAgent1:
         return words
 
     def act(self, obs):
+        if obs.shape == (60,):
+            obs = obs.reshape((6, 2, 5))
 
         assert obs.shape[1:] == (2, 5)
         letters = pd.DataFrame(obs[:, 0, :]).applymap(self.letter_map.get)
@@ -87,6 +89,21 @@ class WordleAgent1:
 
         action = self.words[msk].sort_values(by="score", ascending=False).iloc[0].whole
         return action
+
+    @classmethod
+    def create_default(cls, **kwargs):
+        with open("valid-words.csv") as f:
+            valid_words = f.readlines()
+        valid_words = [w.strip() for w in valid_words]
+        return cls(valid_words, **kwargs)
+
+
+class WordleAgentRandom:
+    def __init__(self, valid_words):
+        self.valid_words = valid_words
+
+    def act(self, obs):
+        return np.random.choice(self.valid_words)
 
     @classmethod
     def create_default(cls, **kwargs):
