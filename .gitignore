@@ -3,3 +3,6 @@ __pycache__/
 .DS_Store
 *.zip
 *tensorboard*
+.env
+.venv/
+.venv*/
